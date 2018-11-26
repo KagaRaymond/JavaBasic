@@ -12,8 +12,6 @@ public class PTra03_04 {
 		// 下記の命令は、入力型プログラムで必要な記述になります。
 		java.util.Scanner scanner = new java.util.Scanner(System.in);
 
-		System.out.println("西暦を入力してください");
-
 		// コマンドプロンプトで入力した文字列が変数lineに代入されます
 		String line = scanner.nextLine();
 
@@ -32,6 +30,24 @@ public class PTra03_04 {
 		 *
 		 * ※ プログラムは何行書いても良いです
 		 */
+		if (num % 4 == 0) {
+			if (num % 100 == 0) {
+				if (num % 400 == 0) {
+					System.out.println(num + "年はうるう年です。");
+				} else {
+					System.out.println(num + "年はうるう年ではありません。");
+				}
+
+
+			} else {
+				System.out.println(num + "年はうるう年です。");
+			}
+
+
+
+		} else {
+			System.out.println(num + "年はうるう年ではありません。");
+		}
 
 
 	}

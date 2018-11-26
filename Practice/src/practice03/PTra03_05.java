@@ -12,8 +12,6 @@ public class PTra03_05 {
 		// 下記の命令は、入力型プログラムで必要な記述になります。
 		java.util.Scanner scanner = new java.util.Scanner(System.in);
 
-		System.out.println("降水確率を入力してください。（数字のみ）");
-
 		// コマンドプロンプトで入力した文字列が変数lineに代入されます
 		String line = scanner.nextLine();
 
@@ -33,6 +31,15 @@ public class PTra03_05 {
 		 * ※ ただし、入力された値が100より大きく、0未満の場合は、「不正な値が入力されました」を出力してください
 		 * ※ プログラムは何行書いても良いです
 		 */
+		if (num >= 75 && num < 101) {
+			System.out.println("雨が降る確率が高いです");
+		} if (num >= 30 && num <= 74) {
+			System.out.println("雨が振るかもしれないです");
+		} if (num <= 29 && num > 0) {
+				System.out.println("雨はまず降らないでしょう");
+		} if (num > 101 || num < 0) {
+					System.out.println("不正な値が入力されました");
+		}
 
 	}
 }

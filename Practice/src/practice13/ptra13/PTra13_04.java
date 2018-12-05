@@ -35,16 +35,16 @@ public class PTra13_04 {
 		while (true) {
 			if(Enemy.damage(You.attack())) {
 				// slimedead
-				System.out.println(You + "は" + Enemy  + "との戦闘に勝利した");
+				System.out.println(You.getName() + "は" + Enemy.getName()  + "との戦闘に勝利した");
 				break;
 			}
 
 			if(You.damage(Enemy.attack())) {
 				// herodead
-				System.out.println( Enemy + "は" + You  + "との戦闘に勝利した");
+				System.out.println( Enemy.getName() + "は" + You.getName()  + "との戦闘に勝利した");
 				break;
 			}
-			return;
+		
 		}
 
 

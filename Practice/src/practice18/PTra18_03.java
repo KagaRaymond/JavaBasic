@@ -58,7 +58,6 @@ public class PTra18_03 {
 	                	array.remove(i);
 	                }
 			}
-
 	        for(Player player: array) {
 	        	System.out.println(player);
 	        }

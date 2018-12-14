@@ -16,7 +16,7 @@ public class PTra03_02 {
 		// ※プログラムは何行書いても良いです
 		if(num >= 65) {
 			System.out.println("合格です");
-			if(num < 65) {
+			if(num != 65) {
 				System.out.println("不合格です");
 
 

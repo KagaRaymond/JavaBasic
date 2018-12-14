@@ -23,7 +23,7 @@ public class PTra02_10 {
 		 */
 		coffee *= 1.08;
 		snack *= 1.08;
-		System.out.println(moneyInHand - coffee - snack);
+		System.out.println(moneyInHand - coffee * 2 - snack);
 
 	}
 }
